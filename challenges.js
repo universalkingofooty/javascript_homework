@@ -1,6 +1,6 @@
 //1st challenge
-const mark_weight = 78
-const mark_height = 1.75
+const mark_weight = 48
+const mark_height = 1.47
 const john_weight = 85
 const john_height = 1.90
 

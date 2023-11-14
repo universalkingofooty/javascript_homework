@@ -27,8 +27,8 @@
 
 
 //third challenge
-const dolphine_score=(100 + 180 + 89) / 3
-const koalas_score=(100 + 180 + 89) / 3
+const dolphine_score=(100 + 180 + 19) / 3
+const koalas_score=(100 + 180 + 80) / 3
 console.log(dolphine_score);
 console.log(koalas_score);
 

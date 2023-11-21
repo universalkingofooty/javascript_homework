@@ -26,20 +26,35 @@
 // }
 
 
-//third challenge
-const dolphine_score=(100 + 180 + 19) / 3
-const koalas_score=(100 + 180 + 80) / 3
-console.log(dolphine_score);
-console.log(koalas_score);
+// //third challenge
+// const dolphine_score=(100 + 180 + 19) / 3
+// const koalas_score=(100 + 180 + 80) / 3
+// console.log(dolphine_score);
+// console.log(koalas_score);
 
-if(dolphine_score > koalas_score && dolphine_score >= 100){
-    console.log('dolphine won the game🥳🥳');
+// if(dolphine_score > koalas_score && dolphine_score >= 100){
+//     console.log('dolphine won the game🥳🥳');
 
-}else if (koalas_score > dolphine_score && koalas_score >= 100){
-    console.log('koalas won the game🥳🥳');
+// }else if (koalas_score > dolphine_score && koalas_score >= 100){
+//     console.log('koalas won the game🥳🥳');
 
-}else if(koalas_score == dolphine_score && koalas_score >= 100 && dolphine_score >= 100){
-    console.log('both are won the game🥳🥳');
+// }else if(koalas_score == dolphine_score && koalas_score >= 100 && dolphine_score >= 100){
+//     console.log('both are won the game🥳🥳');
+// }else{
+//     console.log('no one won the game😒😒');
+// }
+
+// challenge 04
+
+let bill = prompt("enter a bill amount:")
+let tip = bill <= 300 && bill >= 50 
+//  ? bill * 0.15 : bill * 0.2
+var x = 0;
+ console.log(typeof(bill));
+ if  (tip){
+    x =  bill * 0.15
 }else{
-    console.log('no one won the game😒😒');
+    x = bill * 0.2
 }
+
+console.log(`The bill amount  is ${bill} and the tip value is ${x} .The total amount ${Number(bill) + x}`);

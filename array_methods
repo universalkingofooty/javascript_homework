@@ -1,0 +1,54 @@
+//create new array
+
+const weeks = ["monday", "tuesday", "wednesday", "thursday", "friday"]
+
+console.log(weeks);
+
+//add values in a array using unshift & push
+//push is add the values in the last index of array
+const push_value = weeks.push("saturday") //adding saturday in a weeks array by push key word 
+console.log(weeks);
+//unshift is add the values in the in the first index of a array
+weeks.unshift("sunday")//adding sunday in in a weeks array by unshift key word
+console.log(weeks);
+
+//remove values in the array using pop and shift
+
+//pop is remove the  value from the   last index in a array
+
+weeks.pop()//removing the last value from  weeks array
+console.log(weeks);//saturday removed from weeks array
+
+//shift is remove the firdt value from the 1st index in a array
+
+weeks.shift()//removing  the first value from weeks array
+console.log(weeks);//sunday removed from weeks array
+
+// find array's length
+lenOfArray=weeks.length
+console.log(lenOfArray);
+
+//deleting values using index
+delete weeks[2]//deleting wednesday usind delete
+console.log(weeks);
+
+//concat means merging array
+arr_1 = ["a","b","c"]
+arr_2 = ["d","e","f"]
+console.log(arr_1.concat(arr_2));
+
+//flat method for reducing the dimensionality of an array
+ 
+let arr_3 = [["a"],["b"],["c"]]
+otp = arr_3.flat()
+console.log(otp);
+
+//splice method for adding new values in a array
+
+weeks.splice(0,0 ,"sunday")
+console.log(weeks);
+//slice method
+weeks.slice(1,6)
+console.log(weeks);
+
+

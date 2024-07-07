@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="script" href="switch_statement.js" />
+  </head>
+  <body style="text-align: center;">
+    <h1 style="text-align: center">Switch statement</h1>
+    <p id="demo">hello</p>
+    <h1>if else</h1>
+    <br />
+    <label for="Name"></label>
+    <p id="ifelse"></p>
+    <br />
+    <h1>codding challenge 1</h1>
+    <form>
+      <label for="weight"> mark_weight:</label><br />
+      <input type="number" id="mark_weight" name="mark_weight" /><br />
+      <label for="height">mark_height</label><br />
+      <input type="number" id="mark_height" name="height" /><br />
+      <label for="weight"> john_weight:</label><br />
+      <input type="number" id="jhon_weight" name="jhon_weight" /><br />
+      <label for="height">john_height</label><br />
+      <input type="number" id="jhon_height" name="height" />
+    </form>
+
+    <p id="show1"></p>
+    <br />
+    <p id="show1"></p>
+    <br />
+    <p id="display"></p>
+    <br />
+    <button id="submit">submit</button>
+
+    <script>
+      let day = prompt("enter the day:");
+
+      switch (day) {
+        case "monday":
+          document.getElementById(
+            "demo"
+          ).textContent = `sham is day incharge for ${day}  `;
+          break;
+        case "tuesday":
+          document.getElementById(
+            "demo"
+          ).textContent = `servin is the day incharge for ${day}  `;
+          break;
+        case "wednesday":
+          document.getElementById(
+            "demo"
+          ).textContent = `ram is the day incharge for ${day}  `;
+          break;
+        case "thursday":
+          document.getElementById(
+            "demo"
+          ).textContent = `kottesh is the day incharge for ${day}  `;
+          break;
+        case "friday":
+          document.getElementById(
+            "demo"
+          ).textContent = `surya is the day incharge for ${day}  `;
+          break;
+        case "saturday":
+          document.getElementById(
+            "demo"
+          ).textContent = `arun is the day incharge for ${day}  `;
+          break;
+        case "sunday":
+          document.getElementById(
+            "demo"
+          ).textContent = `maaz is the day incharge for ${day}  `;
+          break;
+        default:
+          document.getElementById("demo").textContent = "it's not a day";
+      }
+
+      let name = "sakthi";
+      let age = 11;
+
+      if (age >= 18) {
+        document.getElementById(
+          "ifelse"
+        ).textContent = `${name} 🚗🚗🚗you can drive a vehicle cause your age is ${age}🚗🚗🚗`;
+      } else {
+        document.getElementById(
+          "ifelse"
+        ).textContent = `${name} 🚗🚗🚗you can't drive a vehicle cause your age is ${age}🚗🚗🚗`;
+      }
+      document.getElementById("submit").addEventListener("click", function () {
+        let mark_weight = document.getElementById("mark_weight").value;
+        let mark_height = document.getElementById("mark_height").value;
+        let john_weight = document.getElementById("jhon_weight").value;
+        let john_height = document.getElementById("jhon_height").value;
+
+        let mark_bmi = Math.floor(mark_weight / mark_height ** 2);
+        let john_bmi = Math.floor(john_weight / john_height ** 2);
+
+        document.getElementById(
+          "show1"
+        ).textContent = `mark's mass is: ${mark_bmi}`;
+
+        document.getElementById(
+          "show2"
+        ).textContent = `jhon's mass is: ${john_bmi}`;
+
+        // let higher_bmi = mark_bmi > john_bmi;
+
+        // document.getElementById(
+        //   'display'
+        // ).textContent = `the higher bmi  is:${higher_bmi}`;
+
+        
+      });
+    </script>
+  </body>
+</html>

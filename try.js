@@ -1,16 +1,17 @@
 
-// // function squre(y){
-// //     let x=5
-// //     n=x**y
-// //     return n
-// // }
-// // squre(2)
-// // console.log(n)
+// // // function squre(y){
+// // //     let x=5
+// // //     n=x**y
+// // //     return n
+// // // }
+// // // squre(2)
+// // // console.log(n)
 
 // //primitive number data type
 // let number = 11
 // console.log(number);
 // console.log(typeof number);
+
 
 // //primitive string data type
 // let string = "sakthi"
@@ -26,17 +27,17 @@
 // let difine;
 // console.log(typeof difine);
 
-let bill = prompt("enter a bill amount:")
-let tip = bill <= 300 && bill>=50 
-if (tip=true){
-    console.log(bill * 0.15);
-}else{
-    console.log(bill * 0.2);
-}
-console.log(`The bill amount  is ${bill} and the tip value is ${tip} .The total amount ${bill + tip}`);
+// let bill = prompt("enter a bill amount:")
+// let tip = bill <= 300 && bill>=50 
+// if (tip=true){
+//     console.log(bill * 0.15);
+// }else{
+//     console.log(bill * 0.2);
+// }
+// console.log(`The bill amount  is ${bill} and the tip value is ${tip} .The total amount ${bill + tip}`);
 
 
 
 
-
+// console.log(16 + 16);
 

@@ -1,8 +1,8 @@
-// const day=prompt("enter the day:")
-day = 5
+let day=prompt("enter the day:")
+
 
 switch(day){
-    case (3+2):
+    case ('monday'):
         console.log('sham is day incharge for',day); 
         break
     case "tuesday":
@@ -26,5 +26,3 @@ switch(day){
     default:
         console.log("it's not a day");                         
 } 
-age=18
-//age >= 18 ? console.log('you can vote') :  console.log("you can't vote");

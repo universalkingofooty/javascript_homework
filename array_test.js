@@ -20,3 +20,5 @@ console.log(fruits);
 const fruits_2 =['apple', 'orange', 'banana', 'apple']
 
 console.log(fruits_2.indexOf("apple"));
+
+
